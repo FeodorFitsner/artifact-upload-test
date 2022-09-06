@@ -2,4 +2,4 @@ build: off
 test: off
 
 on_finish:
-- if test (appveyor PushArtifact test.txt)
+- if exist test.txt (appveyor PushArtifact test.txt)
