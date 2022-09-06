@@ -1,0 +1,5 @@
+build: off
+test: off
+
+on_finish:
+- appveyor PushArtifact test.txt
